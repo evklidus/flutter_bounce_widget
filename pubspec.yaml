@@ -1,7 +1,7 @@
 name: flutter_bounce_widget
 description: A new Flutter package project.
 version: 1.0.0
-homepage:
+homepage: https://github.com/evklidus/flutter_bounce_widget
 
 environment:
   sdk: '>=3.0.0-76.0.dev <4.0.0'
