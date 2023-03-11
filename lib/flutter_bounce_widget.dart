@@ -54,23 +54,17 @@ class _BounceWidgetState extends State<BounceWidget>
     return GestureDetector(
       onTap: () {
         _animate.forward();
+        widget.onPressed();
         Future.delayed(
           widget.duration,
           () {
             _animate.reverse();
-            widget.onPressed;
           },
         );
       },
-      onTapDown: (TapDownDetails details) {
-        _animate.forward();
-      },
-      onTapUp: (TapUpDetails details) {
-        _animate.reverse();
-      },
-      onTapCancel: () {
-        _animate.reverse();
-      },
+      onTapDown: (TapDownDetails details) => _animate.forward(),
+      onTapUp: (TapUpDetails details) => _animate.reverse(),
+      onTapCancel: () => _animate.reverse(),
       child: Transform.scale(
         scale: _scale,
         child: widget.child,

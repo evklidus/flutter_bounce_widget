@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bounce_widget/flutter_bounce_widget.dart';
 
@@ -29,7 +31,9 @@ class _MyApp extends StatelessWidget {
               ),
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            log('Pressed !)');
+          },
         ),
       ),
     );
