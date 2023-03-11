@@ -1,17 +1,35 @@
-Package for adding bounce animation to your widget.
+Package for adding bounce animation to your widget
 
-## Features
 
-List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-Gost wrap your widget with BounceWidget.
+---
 
 ## Usage
 
-Please see example folder.
+```dart
+BounceWidget(
+  child: Center(
+    child: Container(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      decoration: BoxDecoration(
+        color: Colors.redAccent,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: const Text(
+        'Example',
+        style: TextStyle(color: Colors.white, fontSize: 25),
+      ),
+    ),
+  ),
+  onPressed: () {
+    log('Pressed !)');
+  },
+)
+```
 
-## Additional information
+## Example in action
 
-It's pretty and useful package. Create issue if you find a bug or want new features.
+![Alt Text](https://s10.gifyu.com/images/flutter_bounce_widget_example.gif)
+
+## Maintainers
+
+- [Erik Minasov](https://github.com/evklidus)
